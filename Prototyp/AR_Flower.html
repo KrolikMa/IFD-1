@@ -54,7 +54,7 @@
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let flower = new Gltf2Node({url: 'Prototyp\media\gltf\sunflower\sunflower.gltf'});
+      let flower = new Gltf2Node({url: 'media/gltf/Lantern/Lantern.gltf'});
       arObject.addNode(flower);
 
       let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle.gltf'});
@@ -68,7 +68,7 @@
       vec3.set(shadow.scale, 0.15, 0.15, 0.15);
       arObject.addNode(shadow);
 
-      const MAX_FLOWERS = 30;
+      const MAX_FLOWERS = 1;
       let flowers = [];
 
       // Ensure the background is transparent for AR.
@@ -148,7 +148,7 @@
       const MAX_ANCHORED_OBJECTS = 30;
       let anchoredObjects = [];
       function addAnchoredObjectsToScene(anchor) {
-        let flower = new Gltf2Node({url: 'media/gltf/sunflower/sunflower.gltf'});
+        let flower = new Gltf2Node({url: 'media/gltf/Lantern/Lantern.gltf'});
         scene.addNode(flower);
         anchoredObjects.push({
           anchoredObject: flower,

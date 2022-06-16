@@ -79,7 +79,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let skybox = new SkyboxNode({url: 'media/textures/milky-way-4k.png'});
       scene.addNode(skybox);
 
-      const MAX_ANCHORED_OBJECTS = 30;
+      const MAX_ANCHORED_OBJECTS = 1;
       let anchoredObjects = [];
 
       // Set with all anchors tracked in a previous frame.
@@ -194,7 +194,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
         anchor.context = {};
 
-        let flower = new Gltf2Node({url: 'media/gltf/sunflower/sunflower.gltf'});
+        let flower = new Gltf2Node({url: 'media/gltf/Lantern/Lantern.gltf'});
         scene.addNode(flower);
         anchor.context.sceneObject = flower;
         flower.anchor = anchor;

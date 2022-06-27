@@ -10,37 +10,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
     
-    <title>Document</title>
+    <title>Kategorien</title>
 </head>
-<body>
+<binput>
     <nav>
         <img src="Bilder/back_button_white.png" class="back" onclick=document.location="index.html">
         <h3>Kategorien</h3>
     </nav>
     
-    <input type="text" class="search" placeholder=" Tiersuche">
+    <input type="text" name="laender" list="tiere"  class="search" placeholder="  Tiersuche">
+    <datalist id="tiere">
+      <option value="Fuchs" />
+      <option value="Reh" />
+      <option value="Fledermaus" />
+      <option value="Wolf" />
+      <option value="Waschbär" />
+      <option value="Wildschwein" />
+    </datalist>
+  </input>
+    
 
     <div class="content-container" onclick=document.location="Lexikon.html">
-        <img src="Bilder/Saeugetier.png">
+        <img src="Bilder/Kategorien/saeugetiere.png">
         <h4>Säugetiere</h4>
     </div>
 
     <div class="content-container">
-        <img src="Bilder/Vogel.png">
+        <img src="Bilder//Kategorien/voegel.png">
         <h4>Vögel</h4>
     </div>
     <div class="content-container">
-        <img src="Bilder/Insekt.png">
+        <img src="Bilder/Kategorien/insekten.png">
 
         <h4>Insekten</h4>
     </div>
     <div class="content-container">
-        <img src="Bilder/Reptil.png">
+        <img src="Bilder/Kategorien/reptilien.png">
 
         <h4>Reptilien</h4>
     </div>
     <div class="content-container">
-        <img src="Bilder/Amphibie.png">
+        <img src="Bilder/Kategorien/amphibien.png">
         <h4>Amphibien</h4>
     </div>
     

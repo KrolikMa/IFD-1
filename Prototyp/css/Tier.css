@@ -37,7 +37,7 @@
 	text-shadow: 1px 1px white;
 	font-size: 50px;
 	font-family: 'Ubuntu', sans-serif;
-	z-index: -1;
+	
 }
 
 .centertext {
@@ -315,6 +315,7 @@ section article {
   font-size: 20px;
   font-family: 'Ubuntu' , sans-serif;
   text-align: center;
+  border-bottom: 1px solid black;
 }
 
 .active, .collapsible:hover {
@@ -331,10 +332,22 @@ section article {
 .button1 {
   display: block;
   background-color: rgba(255, 255, 255, 0.897);
-  border-radius: 80px;
+  border-radius: 15px;
   padding: 6px 18px;
   font-size: 15px;
   margin: 30px auto 0 auto;
   border: 1px solid rgb(86, 85, 85);
-  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.127), 0 6px 20px 0 rgba(0, 0, 0, 0.078);
+}
+
+.button1:active {
+  background-color: green;
+}
+
+
+.dropdown_pic {
+  width: 25px;
+  height: auto;
+  margin-top: 2px;
+  padding-left: 5px;
 }

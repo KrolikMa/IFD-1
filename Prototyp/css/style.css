@@ -14,11 +14,12 @@ p {
     font-size: 16px;
 }
 
+
+
 h3 {
     color: white;
     font-size: 30px;
-    text-align: center;
-
+    margin-left: 15vh;
     margin-bottom: 30px;
     text-shadow: 2px 2px black;
 }
@@ -26,7 +27,7 @@ h3 {
 h4 {
     font-size: 23px;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 35px;
     text-align: center;
 }
 
@@ -35,13 +36,21 @@ h4 {
 /* -------- Seitenelemente ------------------*/
 /* ------------------------------------------*/
 
-.search {
+.search[type=text]{
     margin: 0 5% 0 5%;
     width: 90%;
     height: 30px;
     font-size: 18px;
-    border-radius: 5px;
-    border: 1px solid black;  
+    border-radius: 12px;
+    border: 2px solid black;  
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.183), 0 6px 20px 0 rgba(0, 0, 0, 0.215);
+
+}
+
+.search[type=text]:focus {
+    border: 2px solid green;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.364), 0 6px 20px 0 rgba(0, 0, 0, 0.455);
+    outline:none;
 }
 
 .back {
@@ -50,6 +59,8 @@ h4 {
     height: auto;
     margin-left: 20px;
     padding-top: 3px;
+    z-index: 9999;
+    position: absolute;
 }
 
 nav {
@@ -70,12 +81,16 @@ nav {
 
 .content-container {
     background-color: white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.364), 0 6px 20px 0 rgba(0, 0, 0, 0.455);
     width: 90%;
     margin: 20px 5% 10px 5%;
     display: flex;
     border-radius: 15px;
     border: 1px solid rgb(74, 74, 74);
+}
+
+.content-container:focus {
+    background-color: rgb(60, 119, 63);
 }
 
 .content-container img {

@@ -15,13 +15,23 @@
 <body>
     <nav>
         <img src="Bilder/back_button_white.png" class="back" onclick=document.location="Kategorie.html">
-        <h3>Tiere</h3>
+        <h3>Säugetiere</h3>
     </nav>
 
-    <input type="text" class="search" placeholder="Tiersuche">
+
+    <input type="text" name="laender" list="tiere"  class="search" placeholder="  Tiersuche">
+      <datalist id="tiere">
+        <option value="Fuchs" />
+        <option value="Reh" />
+        <option value="Fledermaus" />
+        <option value="Wolf" />
+        <option value="Waschbär" />
+        <option value="Wildschwein" />
+      </datalist>
+    </input>
 
     <div class="content-container" onclick=document.location="Tier.html">
-        <img src="Bilder/Saeugetier.png">
+        <img src="Bilder/Saeugetiere/Fuchs.png">
         <p></p>
         <h4>Fuchs</h4>
     </div>
